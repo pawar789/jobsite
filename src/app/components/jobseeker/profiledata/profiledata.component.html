@@ -1,0 +1,58 @@
+<h1 style="text-align:center">Fill the details</h1>
+<form (ngSubmit)="addProfile()" #form1="ngForm" >
+    <div class="row">
+        <div class="col-2"><label>Qualification : <span class="red-text">*</span></label></div>
+        <div class="form-group col-4">
+            <input type="text" [(ngModel)]="qualification" name="qualification" #qualification2="ngModel" required placeholder="Enter Qualification" pattern="[a-zA-Z][a-zA-Z , .]+$" class="form-control">
+        </div>
+        <div class="col-6">
+            <span *ngIf="qualification2.invalid && (qualification2.dirty || qualification2.touched)" class="red-text">
+             <span *ngIf="qualification2.errors?.required">Please fill your Qualification.</span>
+             <span *ngIf="qualification2.errors?.pattern">Check out the qualification!!</span>
+            </span>
+        </div>
+    </div><br>
+
+    <div class="row">
+        <div class="col-2"><label>Experience : <span class="red-text">*</span></label></div>
+        <div class="form-group col-4">
+            <input type="number" [(ngModel)]="experience" name="experience" #experience2="ngModel"  required placeholder="Enter Experience"  class="form-control">
+        </div>
+        <div class="col-6">
+            <span *ngIf="experience2.invalid && (experience2.dirty || experience2.touched)" class="red-text">
+             <span *ngIf="experience2.errors?.required">Please enter experience.</span>
+            </span>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-2"><label>Preferred Location : <span class="red-text">*</span></label></div>
+        <div class="form-group col-4">
+            <input type="text" [(ngModel)]="location" name="location" #location2="ngModel"  required placeholder="Enter your Preferred location" pattern="[a-zA-Z][a-zA-Z , .]+$" class="form-control">
+        </div>
+        <div class="col-6">
+            <span *ngIf="location2.invalid && (location2.dirty || location2.touched)" class="red-text">
+             <span *ngIf="location2.errors?.required">Please enter your Preferred Location.</span>
+             <span *ngIf="location2.errors?.pattern">Location should conatin only characters</span>
+            </span>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-2"><label>Upload your Resume : <span class="red-text">*</span></label></div>
+        <div class="form-group col-4">
+            <input type="file" [(ngModel)]="resume" name="resume" #resume2="ngModel" class="file-upload" onchange="console.log(event.target.files)" accept=".pdf,.doc">
+        </div>
+        <div class="col-6">
+            <span *ngIf="resume2.invalid && (resume2.dirty || resume2.touched)" class="red-text">
+             <span *ngIf="resume2.errors?.required">Please upload your CV.</span>
+            </span>
+        </div>
+    </div><br>
+        <div class="row">
+            <div class="col-2"><span class="red-text">* - Mandatory</span></div>
+            <div class="col-4" style="text-align:center;">
+              <button [disabled]="!form1.form.valid" class="btn btn-success">Save</button> &nbsp;
+            </div>  
+            <div class="col-6"></div>
+          </div>
+   
+</form>

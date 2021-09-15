@@ -1,0 +1,145 @@
+<!-- <p>alogin works!</p> -->
+<!-- <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-login-form/draw2.png" class="img-fluid"
+             alt="Sample image"> 
+            
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form (ngSubmit)="login()" #form1="ngForm"> -->
+           <!-- Email input -->
+           <!-- <div class="form-outline mb-4"> -->
+             <!-- <div class="row">
+            <div class="form-label" for="form3Example3"><label><i class="fas fa-envelope"></i>&nbsp; Email Id :</label></div>
+            <div class="form-label col-md-8">
+            <input type="email" id="form3Example3"  [(ngModel)]="email_id" name="email_id" #email_id2="ngModel" 
+            required class="form-control form-control-md" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+              placeholder="Enter a valid email id" >
+          </div>
+          <div class="col-6">
+            <span *ngIf="email_id2.invalid && (email_id2.dirty || email_id2.touched)" class="red-text">
+              <span *ngIf="email_id2.errors?.required"> Email Id should not be empty.</span>
+              <span *ngIf="email_id2.errors?.pattern"> This is not a valid Email Id!</span>
+            </span>
+          </div>
+        </div> -->
+            <!-- Password input -->
+        <!-- <div Class = "form-group"> -->
+            <!-- <div class="form-outline mb-3"> -->
+              <!-- <div class="row">
+                <div class="form-label" for="form3Example4"><label>Password:</label></div>
+                <div class="form-label col-md-8">
+              <input type="password" id="form3Example4" [(ngModel)]="pass_word" name="pass_word" #pass_word2="ngModel"
+               required minlength="4" class="form-control form-control-md"
+                placeholder="Enter password" />
+            </div>
+            <div class="col-6">
+                <span *ngIf="pass_word2.invalid && (pass_word2.dirty || pass_word2.touched)" class="red-text">
+                  <span *ngIf="pass_word2.errors?.required"> Password should not be empty.</span>
+                  <span *ngIf="pass_word2.errors?.minlength"> Password must be at least {{pass_word2.errors?.minlength?.requiredLength}} characters long</span>
+                </span>
+            </div>
+        </div> -->
+ 
+  
+            <!-- <div class="d-flex justify-content-between align-items-center"> -->
+              <!-- Checkbox -->
+              <!-- <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">
+                  Remember me
+                </label>
+              </div>
+              <a href="employer-changepassword" class="text-body">Forgot password?</a>
+            </div> -->
+  
+            <!-- <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account?  -->
+                <!-- <a routerLink="employer-register" class="link-danger">Register</a> -->
+                <!-- <a href="admin-register" class="link-danger">Register</a></p>
+                <br>
+                <br>
+            </div> -->
+  
+          <!-- </form>
+        </div>
+      </div>
+    </div>
+    </section> -->
+
+    <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <br>
+          <br>
+          <img src="assets/images/admin.jpg" 
+          
+            alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form (ngSubmit)="login()" #form1="ngForm">
+           <!-- Email input -->
+           <br>
+           <div class="row">
+           <!-- <div class="form-outline mb-4"> -->
+            <div class="form-label col-md-4" for="form3Example3"><label><i class="fas fa-envelope"></i>&nbsp; Email Id: </label></div>
+            <div class="form-label col-md-8">
+            <input type="email" id="form3Example3"  [(ngModel)]="email_id" name="email_id" #email_id2="ngModel"
+             required class="form-control form-control-md" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+              placeholder="Enter a valid email id" />
+          </div>
+          <div class="col-6">
+            <span *ngIf="email_id2.invalid && (email_id2.dirty || email_id2.touched)" class="red-text">
+              <span *ngIf="email_id2.errors?.required"> Email Id should not be empty.</span>
+              <span *ngIf="email_id2.errors?.pattern"> This is not a valid Email Id!</span>
+            </span>
+          </div>
+        </div>
+            <!-- Password input -->
+        <!-- <div Class = "form-group"> -->
+          <div class="row">
+            <!-- <div class="form-outline mb-3"> -->
+                <div class="form-label col-md-4" for="form3Example4"><label><i class="fa fa-key" aria-hidden="true"></i>&nbsp; Password:</label></div>
+                <div class="form-label col-md-8">
+              <input type="password" id="form3Example4" [(ngModel)]="pass_word" name="pass_word" #pass_word2="ngModel"
+               required minlength="4" class="form-control form-control-md"
+                placeholder="Enter password" />
+            </div>
+            <div class="col-6">
+                <span *ngIf="pass_word2.invalid && (pass_word2.dirty || pass_word2.touched)" class="red-text">
+                  <span *ngIf="pass_word2.errors?.required"> Password should not be empty.</span>
+                  <span *ngIf="pass_word2.errors?.minlength"> Password must be at least {{pass_word2.errors?.minlength?.requiredLength}} characters long</span>
+                </span>
+            </div>
+        </div>
+ 
+  
+            <!-- <div class="d-flex justify-content-between align-items-center">
+               Checkbox -->
+              <!-- <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">
+                  Remember me
+                </label>
+              </div>
+              <a href="admin-changepassword" class="text-body">Forgot password?</a>
+            </div> -->
+  
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              <!-- <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account?  -->
+                <!-- <a routerLink="employer-register" class="link-danger">Register</a> -->
+                <!-- <a href="admin-register" class="link-danger">Register</a></p> -->
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+    </section>

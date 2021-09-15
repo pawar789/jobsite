@@ -1,0 +1,25 @@
+<p>search works!</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Company name</th>
+            <th>Role</th>
+            <th>salary</th>
+            <th>Skills_required</th>
+            <th>Location</th>
+            <th>Action</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let JOB of Jobs | filter: searchValue">
+            
+            <td>{{JOB.company_name}}</td>
+            <td>{{JOB.role}}</td>
+            <td>{{JOB.salary}}</td>
+            <td>{{JOB.skills_required}}</td>
+            <td>{{JOB.location}}</td>
+            <td><a routerLink="/jobseeker-login" class="btn btn-primary">Apply</a></td>
+        </tr>
+    </tbody>
+</table>

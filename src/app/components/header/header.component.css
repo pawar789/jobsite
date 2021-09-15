@@ -1,0 +1,12 @@
+div ul li a{
+    color:white;
+    font-size: 20px;
+    }
+
+    li:hover{
+        background-color: #e67e00;
+    }
+    .navbar-expand-md{
+        background-color:#008275;
+    }
+
